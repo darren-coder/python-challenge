@@ -5,11 +5,9 @@
 import csv
 import os
 
-
-
+# Input and Output
 INPUT_PATH = os.path.join('./Resources/budget_data.csv')  # Input file path
 OUTPUT_PATH = os.path.join('./analysis/budget_analysis.txt')  # Output file path
-
 
 os.chdir(os.path.dirname(os.path.realpath(__file__)))
 # Define variables to track the financial data
