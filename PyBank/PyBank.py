@@ -5,13 +5,10 @@
 import csv
 import os
 
-# Files to load and output (update with correct file paths)
-#absolute_path = os.path.dirname(__file__)
-#relative_path = "../Resources/"
-#csv_file = 'budget_data.csv'
+
 
 INPUT_PATH = os.path.join('./Resources/budget_data.csv')  # Input file path
-OUTPUT_PATH = os.path.join('./analysis/.txt')  # Output file path
+OUTPUT_PATH = os.path.join('./analysis/budget_analysis.txt')  # Output file path
 
 
 os.chdir(os.path.dirname(os.path.realpath(__file__)))
@@ -85,5 +82,3 @@ print(output)
 with open(OUTPUT_PATH, "w") as txt_file:
     txt_file.write(output)
 
-# with open(file_to_output, "w") as txt_file:
-#     txt_file.write(output)
